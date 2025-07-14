@@ -1,5 +1,5 @@
 <script lang="ts">
-  import UserStyleForm from "./lib/UserStyleForm.svelte";
+  import UserStyleForm from "./lib/_UserStyleForm.svelte";
 </script>
 
 <main>
