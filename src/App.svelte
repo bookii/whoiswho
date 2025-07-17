@@ -1,6 +1,11 @@
 <script lang="ts">
   import { Toaster } from "$lib/components/ui/sonner";
+  import { inject } from "@vercel/analytics";
   import DiscordOverlayGenerator from "./lib/DiscordOverlayGenerator.svelte";
+
+  $effect(() => {
+    inject();
+  });
 </script>
 
 <main class="min-h-screen p-6 bg-background flex flex-col">
