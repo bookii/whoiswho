@@ -13,6 +13,7 @@
       target="_blank"
       href="https://x.com/mizz_noff">X</a
     >
-    / <a target="_blank" href="https://mizznoff.booth.pm">BOOTH</a>)
+    / <a target="_blank" href="https://mizznoff.booth.pm">BOOTH</a> /
+    <a target="_blank" href="https://github.com/bookii/whoiswho">GitHub</a>)
   </footer>
 </main>
