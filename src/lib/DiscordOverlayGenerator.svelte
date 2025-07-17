@@ -21,7 +21,7 @@
   };
 
   let users = $state<UserData[]>([]);
-  const defaultColorHex = "#FF0080";
+  const defaultColorHex = "#FE0016";
   let colorMode = $state<"colored" | "uncolored">("colored");
   let isSpeaking = $state(true);
   const initialFormData = {
