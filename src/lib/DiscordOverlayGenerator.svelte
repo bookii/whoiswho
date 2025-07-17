@@ -239,7 +239,9 @@
         コラボ配信の操作キャラ表示ジェネレーター
       </Card.Title>
       <Card.Description style="font-size: 1rem;">
-        Discord通話メンバーのアイコンを色分けしたり、操作キャラ名を表示したりできるCSSジェネレーター
+        <a target="_blank" href="https://streamkit.discord.com/overlay"
+          >Discord Streamkit Overlay</a
+        >の通話参加ユーザーのアイコンを色分けしたり、操作キャラ名を表示したりできるCSSジェネレーター
       </Card.Description>
     </Card.Header>
     <Card.Content>

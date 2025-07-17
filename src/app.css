@@ -61,4 +61,8 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
+
+  :link {
+    @apply text-primary underline;
+  }
 }
