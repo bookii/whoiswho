@@ -34,9 +34,9 @@
   let editDataRecord = $state<Record<string, UserData>>({});
 
   const isValidateDiscordId = (id: string) => {
-    return id.trim() !== "" && /^\d{17,18}$/.test(id);
+    return id.trim() !== "" && /^\d{17,19}$/.test(id);
   };
-  const discordIdErrorMessage = "Discord ID は 17~18 桁の数字です";
+  const discordIdErrorMessage = "Discord ID は 17~19 桁の数字です";
 
   const styleElement = document.createElement("style");
 
@@ -119,11 +119,11 @@
 
     css += outdent`
       .voice_state {
+        height: auto;
         display: flex;
         align-items: center;
-        padding-top: ${colorMode === "colored" ? "10px" : "8px"};
-        padding-bottom: ${colorMode === "colored" ? "10px" : "8px"};
-        padding-left: 8px;
+        padding-top: ${colorMode === "colored" ? "4px" : "2px"};
+        padding-bottom: ${colorMode === "colored" ? "4px" : "2px"};
       }
 
       .voice_avatar {
@@ -392,7 +392,9 @@
       <Card.Content>
         <ul class="bg-secondary/50 rounded-lg p-4">
           {#each users as user, index}
-            <div class="flex flex-wrap items-center justify-between w-full">
+            <div
+              class="flex flex-wrap items-center justify-between w-full py-2"
+            >
               {#if editingUserIds.includes(user.id)}
                 <DiscordUserListItem
                   userNumber={index + 1}
@@ -477,7 +479,7 @@
                   <Card.Content class="flex flex-wrap space-x-4">
                     <div class="flex items-center space-x-2 text-sm">
                       <span class="font-medium">ID:</span>
-                      <span class="text-muted-foreground w-42 truncate">
+                      <span class="text-muted-foreground w-44 truncate">
                         {user.discordId}
                       </span>
                     </div>
