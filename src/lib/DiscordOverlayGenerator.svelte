@@ -241,7 +241,7 @@
       <Card.Description style="font-size: 1rem;">
         <a target="_blank" href="https://streamkit.discord.com/overlay"
           >Discord Streamkit Overlay</a
-        >の通話参加ユーザーのアイコンを色分けしたり、操作キャラ名を表示したりできるCSSジェネレーター
+        >の通話中ユーザーのアイコンを色分けしたり、操作キャラ名を表示したりできるCSSジェネレーター
       </Card.Description>
     </Card.Header>
     <Card.Content>
