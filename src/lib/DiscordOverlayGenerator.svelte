@@ -196,8 +196,6 @@
       }
     }
 
-    console.log("Generated CSS: \n", css);
-
     return css;
   };
 
