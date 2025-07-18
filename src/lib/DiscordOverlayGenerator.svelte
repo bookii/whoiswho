@@ -401,7 +401,7 @@
                   discordId={editDataRecord[user.id].discordId}
                   {isSpeaking}
                 />
-                <div class="flex flex-wrap items-center gap-4 w-full mb-4">
+                <div class="flex flex-wrap items-center gap-4 w-full mt-1 mb-4">
                   <div class="flex-1">
                     <Label for="editDiscordId-{user.id}" class="sr-only">
                       Discord ID
