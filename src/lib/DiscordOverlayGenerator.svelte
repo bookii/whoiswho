@@ -292,7 +292,9 @@
             required
           />
           {#if formData.discordId && !isValidateDiscordId(formData.discordId)}
-            <p class="text-xs text-destructive">{discordIdErrorMessage}</p>
+            <p class="text-xs text-destructive">
+              {discordIdErrorMessage}
+            </p>
           {/if}
         </div>
         {#if colorMode === "colored"}
@@ -377,7 +379,7 @@
             onPressedChange={() => {
               isSpeaking = !isSpeaking;
             }}
-            class="!bg-white !text-secondary-foreground hover:!bg-secondary/50"
+            class="bg-white! text-secondary-foreground! hover:bg-secondary/50!"
           >
             {#if isSpeaking}
               <Volume2 class="size-4" />発話あり
@@ -537,9 +539,14 @@
       </Card.Header>
       <Card.Content>
         <pre
-          class="mb-6 p-4 text-sm bg-secondary/50 rounded-lg overflow-x-auto whitespace-pre-wrap"><code
-            >{generateCSS({ targetUsers: users, isPreview: false })}</code
-          ></pre>
+          class="mb-6 p-4 text-sm bg-secondary/50 rounded-lg overflow-x-auto whitespace-pre-wrap">
+          <code>
+            {generateCSS({
+              targetUsers: users,
+              isPreview: false,
+            })}
+          </code>
+        </pre>
       </Card.Content>
     </Card.Root>
   {/if}
