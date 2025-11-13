@@ -11,6 +11,6 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN pnpm run build
 
-FROM caddy:2.10.2-alpine AS production
-COPY --from=builder --chown=caddy:caddy /app/dist /srv
-EXPOSE 80 443
+FROM nginx:1.29.3-alpine3.22 AS production
+COPY --from=builder /app/dist /usr/share/nginx/html
+CMD ["nginx", "-g", "daemon off;"]  
