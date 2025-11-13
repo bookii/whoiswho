@@ -2,7 +2,7 @@ FROM node:25.2.0-alpine3.22 AS base
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.15.1 --activate
 
-FROM base as deps
+FROM base AS deps
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
