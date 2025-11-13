@@ -12,5 +12,5 @@ COPY . .
 RUN pnpm run build
 
 FROM caddy:2.10.2-alpine AS production
-COPY --from=builder --chown=caddy:caddy /app/dist /usr/share/caddy
+COPY --from=builder --chown=caddy:caddy /app/dist /srv
 EXPOSE 80 443
