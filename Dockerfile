@@ -1,4 +1,4 @@
-FROM node:25.2.0-alpine3.22 AS base
+FROM node:24.7.0-alpine3.21 AS base
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.15.1 --activate
 
